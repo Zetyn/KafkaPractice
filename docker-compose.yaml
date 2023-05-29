@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres
+    container_name: db
+    environment:
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_DB: test
+    ports:
+      - 5433:5432
